@@ -186,6 +186,31 @@
   }
   .overview-list li:first-child{border-top:none;}
   .overview-list li::before{content:"◎";color:var(--accent-dark);flex:none;}
+  .highlight-note{
+    text-align:center;
+    font-weight:700;
+    color:var(--accent-dark);
+    font-size:14px;
+    margin-top:20px;
+  }
+
+  /* photo collage */
+  .photo-collage{
+    position:relative;
+    height:170px;
+    margin-top:26px;
+  }
+  .photo-collage img{
+    position:absolute;
+    width:60%;
+    height:140px;
+    object-fit:cover;
+    border:6px solid #fff;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(38,38,36,.18);
+  }
+  .photo-collage img:first-child{left:0;top:16px;transform:rotate(-4deg);z-index:1;}
+  .photo-collage img:last-child{right:0;top:0;transform:rotate(3deg);z-index:2;}
 
   /* feature cards */
   .cards{display:flex;flex-direction:column;gap:16px;}
@@ -389,7 +414,12 @@
         <li>会員限定サービスが受けられる</li>
         <li>イベントや少人数制セミナーに任意で参加可能</li>
       </ul>
+      <div class="photo-collage">
+        <img src="images/member-gathering.jpg" alt="U35イベントの様子">
+        <img src="images/dinner-gathering.jpg" alt="U35イベントの様子">
+      </div>
     </div>
+    <p class="highlight-note">只今、初期メンバーを募集中。少人数だからこそ、お一人おひとりに手厚くサポートできる今が狙い目です。</p>
   </div>
 </section>
 
